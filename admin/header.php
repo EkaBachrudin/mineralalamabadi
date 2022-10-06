@@ -81,7 +81,7 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<img src="../assets/uploads/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
-								<span class="hidden-xs"><?php echo 'Admin'; ?></span>
+								<span class="hidden-xs"><?php echo $_SESSION['user']['name']; ?></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="user-footer">
@@ -263,6 +263,24 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 							<li><a href="subscriber.php"><i class="fa fa-circle-o"></i> All Subscribers</a></li>
 							<li><a href="subscriber-email.php"><i class="fa fa-circle-o"></i> Email to Subscribers</a></li>
 						</ul>
+					</li>
+					<li style="padding: 10px;color: white">
+						<h3 > Employee Area</h3>
+					</li>
+					<li
+					 class="treeview <?php if( ($cur_page == 'user.php') ) {echo 'active';} ?>">
+						<a href="user.php">
+							<i class="fa fa-hand-o-right"></i>
+							<span>User Control</span>
+						</a>
+					</li>
+					<li
+					 style="padding-bottom: 100px;" 
+					 class="treeview <?php if( ($cur_page == 'newsemployee.php') ) {echo 'active';} ?>">
+						<a href="newsemployee.php">
+							<i class="fa fa-hand-o-right"></i>
+							<span>News Employee</span>
+						</a>
 					</li>
 
         
