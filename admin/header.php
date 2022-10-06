@@ -275,15 +275,21 @@ $cur_page = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+
 						</a>
 					</li>
 					<li
-					 style="padding-bottom: 100px;" 
 					 class="treeview <?php if( ($cur_page == 'newsemployee.php') ) {echo 'active';} ?>">
 						<a href="newsemployee.php">
 							<i class="fa fa-hand-o-right"></i>
 							<span>News Employee</span>
 						</a>
 					</li>
+					<li
+					 class="treeview <?php if( ($cur_page == 'newsemployee.php') ) {echo 'active';} ?>">
+						<a href="newsemployee.php">
+							<i class="fa fa-hand-o-right"></i>
+							<span>Sop</span>
+						</a>
+					</li>
 
-        
+					<hr style="padding-bottom: 100px;">
       			</ul>
     		</section>
   		</aside>

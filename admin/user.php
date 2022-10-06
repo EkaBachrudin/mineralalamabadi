@@ -39,6 +39,7 @@
                         <td><?php echo $row['role']; ?></td>
                         <td>
                         <?php if ($row['id'] != 1) { ?>
+                            <a href="user-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
                             <a href="#" class="btn btn-danger btn-xs" data-href="user-delete.php?id=<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  
                         <?php } ?>
                         </td>

@@ -217,7 +217,6 @@ foreach ($result as $row) {
 								<input type="text" class="form-control" name="publisher" value="<?php echo $publisher; ?>"> (If you keep this blank, logged user will be treated as the publisher)
 							</div>
 						</div>
-						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-3 control-label"></label>
 							<div class="col-sm-6">
